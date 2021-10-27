@@ -80,6 +80,23 @@ i {
   font-size: 1.8em;
 }
 
+.product-container {
+  padding: 0 6em;
+}
+
+.badge {
+  background-color: #ebebeb !important;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 25px;
+}
+.fa-check {
+  color: #0aade4 !important;
+}
+
+.fine-print {
+  color: #66757e;
+}
 /* ===== MEDIA QUERIES ===== */
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
