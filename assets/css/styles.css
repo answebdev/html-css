@@ -1,5 +1,6 @@
 body {
   line-height: 200%;
+  padding-bottom: 70px;
 }
 
 .navbar {
@@ -99,7 +100,7 @@ i {
 }
 
 .bottom-card {
-  border-color: #fd6631;
+  border: 2px solid #fd6631 !important;
   border-radius: 0;
   margin-bottom: 40px;
 }
@@ -113,6 +114,17 @@ i {
 .bottom-card-text {
   text-align: center;
   color: #000 !important;
+}
+
+.footer {
+  background-color: #0077b9 !important;
+}
+
+.footer-text {
+  color: #fff !important;
+  text-align: center !important;
+  font-weight: 400;
+  font-size: 14px;
 }
 /* ===== MEDIA QUERIES ===== */
 
