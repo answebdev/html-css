@@ -97,6 +97,23 @@ i {
 .fine-print {
   color: #66757e;
 }
+
+.bottom-card {
+  border-color: #fd6631;
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+
+.bottom-card-title {
+  text-align: center;
+  color: #fd6631;
+  font-weight: 700;
+}
+
+.bottom-card-text {
+  text-align: center;
+  color: #000 !important;
+}
 /* ===== MEDIA QUERIES ===== */
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
