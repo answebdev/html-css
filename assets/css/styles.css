@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   line-height: 200%;
   padding-bottom: 70px;
@@ -30,23 +31,8 @@ body {
   background-size: cover;
   position: relative;
 }
-/* 
-.hero:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-} */
 
 .hero-content {
-  /* position: absolute; */
   bottom: 15px;
   color: #fff;
 }
@@ -86,7 +72,9 @@ i {
 }
 
 .product-container {
-  padding: 0 6em;
+  width: 100%;
+  height: auto;
+  padding: 0 8em;
 }
 
 .badge {
@@ -95,6 +83,7 @@ i {
   padding: 8px 12px;
   border-radius: 25px;
 }
+
 .fa-check {
   color: #0aade4 !important;
 }
@@ -107,6 +96,10 @@ i {
   border: 2px solid #fd6631 !important;
   border-radius: 0;
   margin-bottom: 40px;
+}
+
+.oop {
+  max-width: 100%;
 }
 
 .bottom-card-title {
@@ -133,10 +126,6 @@ i {
 /* ===== MEDIA QUERIES ===== */
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
-  /* body {
-    background-color: red;
-  } */
-
   .alert-container {
     display: flex;
     justify-content: center;
@@ -145,12 +134,39 @@ i {
   .alert-row {
     width: 95%;
   }
+
+  .dip {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+    padding: 0 10em;
+  }
+
+  .pill-group {
+    margin-top: 40px;
+  }
+
+  .oop {
+    max-width: 100%;
+  }
+
+  .product-container {
+    width: 100%;
+    height: auto;
+    padding: 0 8em;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
-  /* body {
-    background-color: yellow;
-  } */
+  #engine-text {
+    font-size: 30px;
+  }
+
+  .list-text {
+    font-size: 14px;
+  }
 
   .hero {
     min-height: 70vh;
@@ -167,18 +183,34 @@ i {
   .alert-container {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   .alert-row {
     width: 95%;
+  }
+
+  .product-container {
+    width: 100%;
+    height: auto;
+    padding: 0 12em;
+  }
+
+  .pill-group {
+    margin-top: 40px;
+  }
+
+  .oop {
+    max-width: 100%;
+  }
+  .product-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
-  /* body {
-    background-color: steelblue;
-  } */
-
   .engine,
   .list {
     display: none;
@@ -199,13 +231,20 @@ i {
 
   .alert-row {
     width: 95%;
+  }
+
+  .pill-group {
+    margin-top: 40px;
+  }
+
+  .product-container {
+    width: 100%;
+    height: auto;
+    padding: 0 10em;
   }
 }
 
 @media screen and (min-width: 551px) and (max-width: 640px) {
-  /* body {
-      background-color: brown;
-    } */
   .engine,
   .list {
     display: none;
@@ -226,13 +265,32 @@ i {
 
   .alert-row {
     width: 95%;
+  }
+
+  .pill-group {
+    margin-top: 40px;
+  }
+
+  .product-container {
+    width: 100%;
+    height: auto;
+    padding: 0 5em;
   }
 }
 
 @media screen and (min-width: 471px) and (max-width: 550px) {
-  /* body {
-    background-color: salmon;
-  } */
+  .engine,
+  .list {
+    display: none;
+  }
+
+  .form-div {
+    margin-top: 40px !important;
+  }
+
+  .form-card {
+    width: 100% !important;
+  }
 
   .alert-container {
     display: flex;
@@ -241,13 +299,20 @@ i {
 
   .alert-row {
     width: 95%;
+  }
+
+  .pill-group {
+    margin-top: 40px;
+  }
+
+  .product-container {
+    width: 100%;
+    height: auto;
+    padding: 0 3em;
   }
 }
 
 @media screen and (min-width: 431px) and (max-width: 470px) {
-  /* body {
-      background-color: black;
-    } */
   .engine,
   .list {
     display: none;
@@ -268,13 +333,20 @@ i {
 
   .alert-row {
     width: 95%;
+  }
+
+  .pill-group {
+    margin-top: 40px;
+  }
+
+  .product-container {
+    width: 100%;
+    height: auto;
+    padding: 0 1em;
   }
 }
 
 @media screen and (min-width: 401px) and (max-width: 430px) {
-  /* body {
-      background-color: burlywood;
-    } */
   .engine,
   .list {
     display: none;
@@ -295,13 +367,20 @@ i {
 
   .alert-row {
     width: 95%;
+  }
+
+  .pill-group {
+    margin-top: 40px;
+  }
+
+  .product-container {
+    width: 100%;
+    height: auto;
+    padding: 0 1em;
   }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
-  /* body {
-      background-color: pink;
-    } */
   .engine,
   .list {
     display: none;
@@ -322,5 +401,15 @@ i {
 
   .alert-row {
     width: 95%;
+  }
+
+  .pill-group {
+    margin-top: 40px;
+  }
+
+  .product-container {
+    width: 100%;
+    height: auto;
+    padding: 0 1em;
   }
 }

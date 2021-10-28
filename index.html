@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-8">
-    <!-- Link to Google Fonts -->
-
     <!-- Link to Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -34,14 +32,15 @@
             <div class="hero-content">
                 <div class="row">
                     <div class="col-md-12 engine">
-                        <h1 style="margin: 40px 0 20px 0; padding-left: 40px;">CHECK ENGINE LIGHT ON?</h1>
+                        <h1 id='engine-text' style="margin: 40px 0 20px 0; padding-left: 40px;">CHECK ENGINE LIGHT ON?
+                        </h1>
                     </div>
                     <div class="col-md-7 list">
                         <ul>
-                            <li><i class="fas fa-play"></i>
+                            <li class="list-text"><i class="fas fa-play"></i>
                                 Results matter! We Win, when it matters most
                             </li>
-                            <li><i class="fas fa-play"></i>
+                            <li class="list-text"><i class="fas fa-play"></i>
                                 We will get you a Rental Car and Medical Care right away
                             </li>
                         </ul>
@@ -71,7 +70,6 @@
         </div>
     </div>
 
-
     <div class="alert-container">
         <div class="row alert-row">
             <div class="col-md-1"></div>
@@ -83,28 +81,44 @@
     </div>
 
     <div class="product-container">
-        <div class="row">
-            <div class="col-md-5">
-                <img src="./assets/images/product.png" alt="Product">
-            </div>
-            <div class="col-md-7">
-                <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-check"></i> Real Time Updates on
-                    Car Performance
-                </span>
-                <p></p>
-                <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-check"></i> Free, Easy-to-Use
-                    App</span>
-                <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-check"></i> Compatible with IOS &
-                    Android</span>
-                <p></p>
-                <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-check"></i> Easily Diagnose Your
-                    Car!
-                </span>
-                <p></p>
-                <p class="fine-print">
-                    Compatible with Cars manufactured after 1996 (Some Exceptions may apply)<br />
-                    Weight: 0.075 KG | Dimensions: 70mm x 90mm x 30mm
-                </p>
+        <div class="parent">
+            <div class="row dip">
+
+                <div>
+                    <div class="col-md-5">
+                        <img id='product-image' src="./assets/images/product.png" alt="Product">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col-md-7 col-xs-12 pill-group oop">
+                        <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-check"></i> Real Time
+                            Updates
+                            on
+                            Car Performance
+                        </span>
+                        <p></p>
+                        <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-check"></i> Free,
+                            Easy-to-Use
+                            App</span>
+                        <p></p>
+                        <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-check"></i> Compatible with
+                            IOS
+                            &
+                            Android</span>
+                        <p></p>
+                        <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-check"></i> Easily Diagnose
+                            Your
+                            Car!
+                        </span>
+                        <p></p>
+                        <p class="fine-print">
+                            Compatible with Cars manufactured after 1996 (Some Exceptions may apply)<br />
+                            Weight: 0.075 KG | Dimensions: 70mm x 90mm x 30mm
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -113,13 +127,11 @@
         <br />
     </div>
 
-
-
-    <div class="product-container">
-        <div class="row">
-            <div class="col-md-4">
+    <div class="product-container ">
+        <div class="row product-cards">
+            <div class="col-md-4 col-xs-12 oop">
                 <div class="card bottom-card">
-                    <div class="card-body">
+                    <div class="card-body bottom-card-body">
                         <h5 class="card-title bottom-card-title">CAR SAVINGS</h5>
                         <h1 class="card-subtitle mb-2 text-muted bottom-card-text">$4.75 Million</h1>
                         <hr style="height:1px;border:none;color:#8fa5b4;background-color:#8fa5b4;" />
@@ -127,8 +139,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card bottom-card">
+            <div class="col-md-4 col-xs-12 oop">
+                <div class="card bottom-card bottom-card-body">
                     <div class="card-body">
                         <h5 class="card-title bottom-card-title">MAINTENANCE SAVINGS</h5>
                         <h1 class="card-subtitle mb-2 text-muted bottom-card-text">$2.75 Million</h1>
@@ -137,8 +149,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card bottom-card">
+            <div class="col-md-4 col-xs-12 oop">
+                <div class="card bottom-card ">
                     <div class="card-body">
                         <h5 class="card-title bottom-card-title">HAPPY CUSTOMERS</h5>
                         <h1 class="card-subtitle mb-2 text-muted bottom-card-text">5.50 Million</h1>
@@ -149,13 +161,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <!-- <nav class="navbar navbar-light bg-light fixed-bottom footer">
-        <div class="container-fluid justify-content-center">
-            <span class="navbar-brand mb-0 h1 footer-text">Copyright 2018 All Rights Reserved</span>
-        </div>
-    </nav> -->
 
     <footer id="sticky-footer" class="flex-shrink-0 py-2 bg-dark text-white-50 footer">
         <div class="container text-center">
